@@ -170,6 +170,12 @@ RCT_EXPORT_METHOD(getDistanceCycling:(NSDictionary *)input callback:(RCTResponse
     [self fitness_getDistanceCyclingOnDay:input callback:callback];
 }
 
+
+RCT_EXPORT_METHOD(getExerciseMinutes:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self fitness_getExerciseMinutes:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getDailyDistanceCyclingSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self fitness_getDailyDistanceCyclingSamples:input callback:callback];
@@ -244,6 +250,7 @@ RCT_EXPORT_METHOD(getMindfulMinutes:(NSDictionary *)input callback:(RCTResponseS
 {
     [self mindfulness_getMindfulMinutes:input callback:callback];
 }
+
 RCT_EXPORT_METHOD(saveMindfulSession:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self mindfulness_saveMindfulSession:input callback:callback];
